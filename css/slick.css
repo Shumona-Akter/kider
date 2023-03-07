@@ -1,0 +1,246 @@
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.family-slider .img{
+    position: relative;
+    display: inline-block;
+}
+
+.rataing{
+position: absolute;
+width: 145px;
+height: 53px;
+left: 50%;
+bottom: -27px;
+transform: translateX(-50%);
+background: #f4f4f4;
+opacity: 0.6;
+border-radius: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.family-slider .img .icons{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.family-slider .img .icons i{
+    color: #FF6900;
+}
+
+.family-slider .content{
+    margin-top: 36px;
+}
+
+.family-slider .member-profile{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.family-slider .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 36px 16px 0 16px;
+}
+.family-slider .profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.family-slider .member-profile img{
+    width: 100%;
+}
+.family-slider .name-title{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.family-slider .name-title h2{
+font-size: 16px;
+color: #3D4246;
+font-weight: bold;
+}
+.family-slider .name-title h5{
+    font-size: 14px;
+    color: #69727B;
+}
+
+.family-slider .content h4{
+    font-size: 14px;
+color: #69727B;
+}
+
+.family-slider h3{
+    font-size: 16px;
+    color: #3D4246;
+    margin-top: 17px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.family-slider p{
+    font-size: 16px;
+    color: #3D4246;
+    margin: 14px 10px 0 10px !important;
+}
+
+.family-slider .slick-dots li button {
+    font-size: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid #8E8E8E;
+}
+
+.family-slider .slick-dots .slick-active button {
+    position: relative;
+    border: 0;
+}
+
+.family-slider .slick-dots .slick-active button::after {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    content: "";
+    background-color: #8E8E8E;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+.slick-dots li button:before, .slick-dots li button:before {
+	display: none;
+}
